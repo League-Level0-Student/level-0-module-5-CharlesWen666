@@ -1,13 +1,11 @@
 package _03_method_writing._1_obedient_robot;
-
 import java.awt.Color;
 
 import javax.swing.JOptionPane;
 
 import org.jointheleague.graphical.robot.Robot;
-
 public class obedient_robot {
-	static Robot bot = new Robot();
+static Robot bot = new Robot();
 static void setColor() {
 	String c=JOptionPane.showInputDialog("Blue or Yellow or Red?");
 	if(c.equalsIgnoreCase("Blue")) {
@@ -55,8 +53,6 @@ bot.move(2);
 bot.turn(1);
 }
 }
-	
-
 public static void main(String[] args) {
 		setColor();
 		String shape = JOptionPane.showInputDialog("Square or Triangle or Circle?");
